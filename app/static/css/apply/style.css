@@ -1,0 +1,959 @@
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Noto Sans Thin'), local('NotoSans-Thin'),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/eot/NotoSansKR-Thin-Hestia.eot),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/eot/NotoSansKR-Thin-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/woff/NotoSansKR-Thin-Hestia.woff) format('woff'),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/otf/NotoSansKR-Thin-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Noto Sans Light'), local('NotoSans-Light'),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/eot/NotoSansKR-Light-Hestia.eot),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/eot/NotoSansKR-Light-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/woff/NotoSansKR-Light-Hestia.woff) format('woff'),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/otf/NotoSansKR-Light-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 350;
+    src: local('Noto Sans DemiLight'), local('NotoSans-DemiLight'),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/eot/NotoSansKR-DemiLight-Hestia.eot),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/eot/NotoSansKR-DemiLight-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/woff/NotoSansKR-DemiLight-Hestia.woff) format('woff'),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/otf/NotoSansKR-DemiLight-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Sans Regular'), local('NotoSans-Regular'),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/eot/NotoSansKR-Regular-Hestia.eot),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/eot/NotoSansKR-Regular-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/woff/NotoSansKR-Regular-Hestia.woff) format('woff'),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/otf/NotoSansKR-Regular-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Noto Sans Medium'), local('NotoSans-Medium'),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/eot/NotoSansKR-Medium-Hestia.eot),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/eot/NotoSansKR-Medium-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/woff/NotoSansKR-Medium-Hestia.woff) format('woff'),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/otf/NotoSansKR-Medium-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Noto Sans Bold'), local('NotoSans-Bold'),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/eot/NotoSansKR-Bold-Hestia.eot),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/eot/NotoSansKR-Bold-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/woff/NotoSansKR-Bold-Hestia.woff) format('woff'),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/otf/NotoSansKR-Bold-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Noto Sans Black'), local('NotoSans-Black'),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/eot/NotoSansKR-Black-Hestia.eot),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/eot/NotoSansKR-Black-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/woff/NotoSansKR-Black-Hestia.woff) format('woff'),
+    url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/otf/NotoSansKR-Black-Hestia.otf) format('opentype');
+} 
+
+body, table, div, p {font-family:'Noto Sans Korean';}
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  margin-right: -250px;
+  overflow-y: auto;
+  background: #222;
+  
+}
+body{
+  font-family: 'NotoSansCJKkr-Medium';
+  font-size: 14px;
+  line-height: 1.472857143;
+  color: #333;
+  background-color: #fff;
+  width: 100%;
+  height:100%;
+  margin: 0;
+  padding:0;
+
+}
+#menu-toggle{
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right:0;
+}
+.toggle{
+  margin: 5px 5px 0 0;
+}
+
+.btn-dark{
+  border-radius: 0;
+  color: #fff;
+  background-color: rgba(0,0,0,0.4)!important;
+}
+.btn-light{
+  border-radius: 0;
+  color: #333;
+  background-color: rgb(255,255,255);
+}
+
+.sidebar-nav li{
+  text-align: 20px;
+  line-height: 40px;
+  list-style: none;
+  color: #999;
+}
+.sidebar-brand{
+  font-size: 18px;
+  line-height: 55px;
+
+}
+
+#sidebar-wrapper.active{
+  right: 250px; 
+  width: 250px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+
+
+}
+
+.section-container{
+  display: table;
+  position: relative;
+  width: 100%;
+ 
+}
+
+
+.text-vertical-center{
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  margin:0 auto;
+  width: 320px;
+
+}
+
+.text-vertical-center h1{
+  margin: 0;
+  padding: 0;
+  font-size: 4.5em;
+  font-weight: 700;
+
+}
+h3{
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.1;
+
+}
+
+#history{
+  overflow: hidden;
+  max-height: 1600px;
+}
+.container{
+  width:100%!important;
+}
+
+#history .container{
+  position: relative;
+  overflow:hidden;
+}
+.about{
+  background-color: #fff;
+}
+.whatisthereal{
+  width:80%;
+  height:100px;
+  margin:0 auto;
+  padding-top:50px;
+  
+  font-size:40px;
+  text-align: center;
+
+}
+
+.real_introduce{
+  padding:15px;
+  font-size:medium;
+}
+#history{
+  width:100%;
+  overflow-y:hidden;
+}
+#history .history{
+  width:50%;
+  margin:50px auto;
+  background-color: rgba(100,100,100,0.5)
+}
+.history{
+
+  padding:15px;
+}
+.real_introduce div:first-child(){
+  border-bottom: 2px solid #000;
+}
+.real_introduce h4{
+  line-height: 20px;
+}
+.history h2{
+  text-align: center;
+  color:#fff;
+}
+
+.history_table{
+  margin:0 auto;
+}
+.history_table tr{
+  padding-top:30px;
+  padding-bottom: 30px;
+}
+
+.history_table td{
+  padding: 10px;
+  font-size:15px;
+  color:#fff;
+  font-weight: 400;
+}
+
+.real_movie{
+  width:100%;
+}
+
+@media(min-width : 320px){
+
+  .introduce_container{
+    width:320px;
+    margin:0 auto;
+  }
+
+  .real_introduce{
+    width:320px;
+    position:relative;
+    margin:0 auto;
+  }
+
+  .history{
+    width:320px;
+    
+    margin:0 auto;
+  }
+
+
+#history .history{
+  width:90%;
+  margin:50px auto;
+  background-color: rgba(100,100,100,0.7)
+}
+
+}
+
+
+@media(min-width : 800px){
+
+  .introduce_container{
+    width:800px;
+    margin:0 auto;
+  }
+
+  .real_introduce{
+    width:600px;
+    
+    position:relative;
+    margin:0 auto;
+   
+  }
+
+  .history{
+    width:400px;
+    
+    margin:0 auto;
+  }
+}
+.real_2nd_logo{
+  position:relative;
+  float:left;
+}
+.real_2nd_logo img{
+  width:150px;
+  margin:20px;
+  padding-top:54px;
+}
+/*.container{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+*/
+.text-center{
+text-align: center;
+}
+.center{
+  text-align: center;
+}
+.sidebar-nav a{
+  color:#999;
+}
+.intro_img{
+  
+  width:100%;
+}
+
+.intro_img img{
+  width:100%;
+  margin-top:50px;
+}
+
+.activity_img{
+  margin-top:50px;
+  width:100%;
+}
+
+.activity_img img{
+  width:100%;
+}
+
+.bg-box{
+  position: absolute;
+  top:0;
+  left:0;
+  z-index:-10;
+  
+}
+.bg-box img{
+  width:100%;
+  position: relative;
+  float:left;
+}
+
+.sidebar-nav a:hover{
+  color:#fff;
+}
+#sidebar-wrapper{
+z-index: 1000;
+  position: fixed;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  margin-right: -250px;
+  overflow-y: auto;
+  background: #222;
+
+
+
+}
+hr.small{
+  max-width: 100px;
+}
+.services span{
+ font-size: 100px;
+}
+.callout{
+  display: table;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background:url(../img/callout.jpg) no-repeat center center scroll;
+  background-size: cover;
+
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.portfolio{
+  padding:50px 0;
+}
+.portfolio-item{
+  margin-bottom: 30px;
+}
+.service-item{
+  margin-bottom: 30px;
+}
+.services{
+  padding: 50px 0;
+}
+.call-to-action{
+  padding: 50px 0;
+}
+
+.logotype{
+width:150;
+}
+
+@media(min-width : 320px){
+
+.real_2nd_logo{
+  width:100px;
+  margin:0 auto;
+  display: none;
+}
+.real_2nd_logo img{
+  width:100%;
+  margin:0;
+}
+
+.slogan-box{
+  position:relative;
+  width:320px;
+  margin: auto;
+}
+
+
+.logo{
+  width:320px;
+}
+  .header{
+    width: 100%;
+    height:600px;
+  margin:0 auto;
+  padding:150px 0 0 0;
+  background:url(../img/first_320.png) no-repeat center center scroll;
+  background-size: cover;
+}
+
+  .introduce{
+    margin: 0 auto;
+    width: 320px;
+    height: 617px;
+    background:url(../img/introduce_320.png)no-repeat center center scroll;
+  background-size:cover;
+  }
+
+.activity{
+  margin:0 auto;
+  width: 320px;
+  height: 617px;
+  
+  background:url(../img/activity_320.png)no-repeat center center scroll;
+  background-size:cover;
+}
+
+.sponsor {
+  margin:0 auto;
+  width: 100%;
+  height: 350px;
+  background:url(../img/sponsor.jpg)no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+}
+.histo{
+  height:1000px;
+}
+}
+
+
+@media (min-width : 992px){
+#history .history{
+  width:60%;
+  margin:50px auto;
+}
+.slogan-box{
+  float:left;
+  position:relative;
+  width:380px;
+  margin-left:100px;
+}
+
+.main-slogan h4{
+  font-size:20px;
+}
+.logo{
+  width:380px;
+}
+
+
+  .header{
+  margin:0 auto;
+  background:url(../img/first_900.png) no-repeat center center scroll;
+  background-size: cover;
+}
+
+.introduce {
+  margin:0 auto;
+  width: 900px;
+  height: 583px;
+  
+  background:url(../img/introduce_900.jpg)no-repeat center center scroll;
+  background-size:cover;
+}
+
+.activity{
+  margin:0 auto;
+  width: 900px;
+  height: 583px;
+  
+  background:url(../img/activity_900.jpg)no-repeat center center scroll;
+  background-size:cover;
+}
+
+.sponsor {
+  margin:0 auto;
+  width: 100%;
+  height: 600px;
+  background:url(../img/sponsor.jpg)no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+}
+
+}
+
+.main-slogan{
+  color:#fff;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.spon{
+  background-color: #98bfdf;
+}
+
+.footer-text{
+  width:100%;
+  padding-top:10px;
+  text-align: center;
+  position:relative;
+  float:left;
+    font-size:15px;
+    display:block;
+    color:#fff;
+}
+
+@media(min-width : 320px){
+  .whatisthereal img{
+    width:70%;
+  }
+  .footer{
+    background-color:#555;
+    padding:0;
+    border-top:1px solid #e7e7e7;
+
+  }
+  .footer-container{
+    width:320px;
+    height:80px;
+    margin: 0 auto;
+  }
+  .symbol-img{
+    display:none;
+  }
+  .symbol-img{
+    width:50px;
+    height:50px;
+    vertical-align: middle
+  }
+
+
+}
+
+@media(min-width : 550px){
+  .whatisthereal img{
+    width:300px;
+  }
+  .footer-container{
+    width:500px;
+    height:80px;
+    margin: 0 auto;
+  }
+}
+@media(min-width : 768px){
+  
+  .footer{
+    background-color:#555;
+    padding:10px 0;
+    border-top:1px solid #e7e7e7;
+
+  }
+  .footer-container{
+    width:650px;
+    height:80px;
+    margin: 0 auto;
+  }
+
+ .footer-symbol{
+    display:block;
+  }
+  .footer-logo{
+    float:left;
+    overflow:hidden;
+  }
+
+  .symbol-img{
+    width:150px;
+    height:50px;
+    display:block;
+    vertical-align: middle
+  }
+  .contact{
+    font-size:10px;
+    margin-top : 10px;
+  }
+
+  .row{
+    width:500px;
+    margin:0 auto;
+  }
+}
+
+
+@media (min-width : 992px){
+  .footer{
+    padding:10px 0;
+    border-top:1px solid #e7e7e7;
+
+  }
+
+  .symbol-img{
+    width:160px;
+    height:60px;
+    vertical-align: middle
+  }
+
+  .contact{
+    font-size:16px;
+    margin-top : 20px;
+  }
+  .row{
+    width:750px;
+    margin:0 auto;
+    position:relative;
+  }
+}
+
+
+#header{
+  background:#fff;
+  z-index:6;
+}
+
+.navnar{
+  margin-bottom:0;
+  overflow:visible;
+  color:#777777;
+}
+
+#main-menu.row-fluid{
+  display:block;
+}
+
+#main-menu{
+  z-index:100;
+  position:relative;
+}
+
+.full-width .row-fluid.inline_menu{
+  width:100% !important;
+}
+
+#main-menu .container-fluid{
+  padding:10px;
+
+}
+
+.inline_menu > div.container-fluid{
+  position:relative;
+}
+
+.inline_menu #inner-logo{
+  padding:0px 20px 0px 0px;
+  float:left;
+}
+
+#logo{
+  display:block;
+  min-height:23px;
+  width:50px;
+}
+
+#logo img{
+  margin-top:5px;
+  margin-bottom:5px;
+  max-width:100%;
+  height:auto;
+  vertical-align:middle;
+  border:0;
+}
+
+.inline_menu #inner-menu{
+  display:inline-block;
+  position:relative;
+}
+
+.navbar{
+  height:0;
+}
+#inner-menu{
+  display:block;
+  clear:both;
+  opacity: 1; 
+  display: block;
+   top: 5px; 
+   padding-top: 0px;
+   float:right;
+}
+
+.navbar-inner{
+  padding-right:0;
+  padding-left:0;
+  min-height:none;
+  min-height:auto;
+  border:none;
+  border-radius:0;
+  -webkit-border-radius:0;
+  -moz--border-radius:0;
+  background-color:transparent;
+  background-image: none;
+}
+
+.menu-cont{
+  margin:0;
+}
+
+a {
+  color:#000;
+}
+.hvr{
+  -webkit-transition:all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition:all .1s ease-in-out;
+}
+
+.navbar .btn-navbar{
+  position:relative;
+  text-shadow:1px 1px 1px #fff;
+  font-size:14px;
+}
+
+.navbar .nav{
+  position:relative;
+  left:0;
+  display:block;
+  float:left;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  text-decoration: none;
+  background-color: transparent!important;
+}
+
+.nav>li>a{
+  padding-top:0 !important;
+}
+
+.navbar .nav .navbar .nav > li{
+  margin:0;
+  line-height:normal;
+}
+.navbar .nav > li{
+  float:left;
+  padding:0px 0 10px 0;
+}
+
+.nav > li > a{
+  color:#fff !important;
+  }
+
+
+.realmember{
+  width:100%;
+  z-index:1;
+  height:auto;
+  max-height:300px;
+  background-color:#576782;
+  position:relative;
+}
+
+.member_container{
+  width:70%;
+  min-width:320px;
+  margin: 0px auto;
+  padding:40px 0;
+
+}
+
+.member_container h1{
+  font-size:40px;
+  color:#fff;
+  text-align: center;
+}
+
+.member_container h2{
+  font-size:15px;
+  color:#ddd;
+  line-height: 23px;
+  vertical-align: middle;
+  text-align: center;
+}
+.member_term:focus .member_term:hover{
+ 
+    background-color: transparent;
+    color: #333333;
+    text-decoration: none;
+
+}
+.center{
+  margin:0 auto;
+}
+
+
+.activity_column {
+        /*
+        -webkit-columns: 2 300px;
+        -moz-columns: 2 300px;
+        columns: 2 200px;
+        -webkit-column-gap: 0em;
+        -moz-column-gap: 0em;
+        column-gap: 0em;
+        */
+    }
+
+
+
+
+@media (min-width : 320px){
+  .desktop{
+    display:none;
+  }
+  .mobile{
+    display:block;
+  }
+    .activity_column > img {
+        outline: 0; 
+        width:100%;
+        height:auto;
+        position:relative;
+        float:left;
+    }
+
+    .member_container h1{
+      font-size:30px;
+    }
+  }
+@media (min-width : 720px){
+
+  .desktop{
+    display:block;
+  }
+
+  .mobile{
+    display:none;
+  }
+    .activity_column > img {
+        outline: 0; max-width: 50%;
+        width:50%;
+        height:auto;
+        position:relative;
+        float:left;
+    }
+    .member_container h1{
+      font-size:50px;
+    }
+  }
+
+.card_custom_body{
+  width:220px;
+}
+
+.container-fluid.main{
+  margin:0 auto;
+  padding:20px;
+}
+
+.row-fluid{
+  width:100%;
+}
+
+
+@media (min-width : 320px){
+.main-side .entry-cont{
+  margin-top:20px;
+  display:table;
+  clear:both;
+  position:relative;
+  padding:0px;
+  width:100%;
+
+}
+.row-fluid .span8{
+  width:80%;
+  margin: 0 auto;
+}
+
+}
+@media (min-width : 720px){
+.main-side .entry-cont{
+  margin-top:20px;
+  display:table;
+  clear:both;
+  position:relative;
+  padding:40px;
+  width:100%;
+
+}
+.row-fluid .span8{
+  width:66.6666%;
+  margin: 0 auto;
+}
+
+}
+.row-fluid .span12{
+  width:99.9999%;
+
+}
+
+h1.portfolio-title{
+  margin:0 0 20px;
+  font-size:24px;
+  line-height:1.4em;
+  border-bottom:1px solid #e5e5e5;
+  padding: 0 0 20px;
+  font-weight:700;
+}
+
+.entry-cont img{
+  width:70%;
+  margin:20px 15%;
+}
+
+.entry-cont iframe{
+  width:70%;
+  margin:20px 15%;
+}

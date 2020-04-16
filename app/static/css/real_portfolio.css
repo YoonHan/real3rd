@@ -1,0 +1,230 @@
+/* main color: #0099cc */
+/* sub color: #2ac2e5 */
+/* sub color(dark): #00517a */
+/* sub color(light): #b3e1ee */
+/* title text color: #454545 */
+/* content text color: #575757 */
+
+/* header */
+header#header-wrapper {
+  background-color: #0099cc;
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+.nav-wrapper a {
+  color: #fff;
+}
+/* END header */
+
+/* termbar */
+nav#termbar {
+  margin: 70px auto 45px;
+  display: table;
+  color: #575757;
+}
+/* END termbar */
+
+/* portfolio */
+#part {
+  color: #454545;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bold;
+  clear: both;
+}
+#portfolio {
+  width: 100%;
+  height: auto;
+  padding: 130px 0 50px 0;
+  text-align: center;
+  background-color: white;
+  border-top: 1px dashed #CCC;
+  clear: both;
+}
+#portfoliocards {
+  padding: 50px 0 100px;
+  display: table;
+  margin: auto;
+}
+.portfolio_container {
+  position:relative;
+}
+.portfolio_container > div {
+  position:relative;
+  float: left;
+  margin: 0 10px;
+  width: 200px;
+  height: 100px;
+}
+.card_img {
+   position:relative;
+   color: #000;
+   z-index:1;
+   width: 200px;
+   line-height: 100px;
+}
+.card_img > img {
+  padding: 5px;
+  width: auto;
+  height: 90px;
+  vertical-align: middle;
+}
+.card_bg {
+   position:absolute;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   background-color: #fff;
+   z-index:5;
+   /* These three lines are for transparency in all browsers. */
+   /*-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+   filter: alpha(opacity=0);*/
+   opacity:0;
+}
+.card_txt {
+  color: #575757;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 27px 20px 27px;
+}
+.card_txt > p#card_team {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.card_txt > a {
+  font-size: 13px;
+  color: #575757;
+}
+/* END portfolio */
+
+/* supporter */
+#part_supporter {
+  color: #454545;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bold;
+  clear: both;
+}
+#supporter {
+  width: 100%;
+  height: auto;
+  padding: 130px 0 50px 0;
+  text-align: center;
+  background-color: white;
+  border-top: 1px dashed #CCC;
+  clear: both;
+}
+#supportercards {
+  padding: 50px 0 100px;
+  margin: auto;
+  display: table;
+}
+.supporter_container {
+  position:relative;
+}
+#supportercards > div{
+  position:relative;
+  float: left;
+  margin: 0 10px;
+}
+.card_img {
+   position:relative;
+   color: white;
+   z-index:1;
+   width: 200px;
+   height: 100px;
+}
+/* END supporter */
+
+/* Desktop */
+@media (min-width:1025px) {
+}
+/* Tablet */
+@media (min-width:768px) and (max-width:1024px) {
+}
+/* Tablet & Desktop */
+@media (min-width:768px) {
+
+}
+/* Mobile */
+@media (max-width: 767px) {
+  /* header */
+  header#header-wrapper {
+    background: #0099cc;
+  }
+  /* END header */
+
+  /* portfolio */
+  #portfoliocards {
+    padding: 30px 90px;
+  }
+  .portfolio_container > div {
+    position:relative;
+    margin: 20px 10px;
+    width: 150px;
+    height: 80px;
+    left: 5%;
+  }
+  .card_img {
+     position:relative;
+     color: #fff;
+     z-index:1;
+     width: 150px;
+     line-height: 80px;
+  }
+  .card_img > img {
+    padding: 5px;
+    width: auto;
+    height: 70px;
+    vertical-align: middle;
+  }
+  .card_bg {
+     position:absolute;
+     top: 0px;
+     left: 0px;
+     width: 100%;
+     height: 100%;
+     background-color: #fff;
+     z-index:5;
+     /* These three lines are for transparency in all browsers. */
+     /*-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+     filter: alpha(opacity=0);*/
+     opacity:0;
+  }
+  .card_txt {
+    color: #454545;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 7px 5px;
+  }
+  .card_txt > p#card_team {
+    font-size: 15px;
+  }
+  .card_txt > p#card_content {
+    font-size: 11px;
+  }
+  /* END portfolio */
+
+  /* supporter */
+  #supporter {
+    padding: 70px 0;
+  }
+  #supportercards > div {
+    position:relative;
+    margin: 10px 10px;
+    width: 150px;
+    height: 80px;
+    left: 5%;
+  }
+  .card_img {
+     color: white;
+     z-index:1;
+     width: 150px;
+     height: 80px;
+  }
+  /* END supporter */
+}

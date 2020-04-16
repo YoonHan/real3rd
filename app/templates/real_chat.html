@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Joontaek Lee">
+    <meta name="keywords" content="REAL">
+    <meta name="description" content="Real Entrepreneurship Achievement League website.">
+    <meta name="author-date" content="13/02/2016">
+    <meta name="location" content="Seoul, Rep of Korea">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../static/css/real_activity.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/real_chat.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/real_topmenu.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/real_footer.css">
+    <link rel="shortcut icon" href="../static/res/favicon.ico">
+    <!-- font -->
+    <link href="http://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet" type="text/css">
+
+    <title>REAL</title>
+</head>
+<body>
+<!-- HEADER -->
+<header id="header-wrapper">
+    <div class="row">
+        <div class="logo-wrapper">
+            <a href="/"><img src="../static/res/img/logo-white.png" class="logo-real"/></a>
+        </div>
+        <div class="nav-wrapper">
+            <nav id="header-nav">
+                <ul>
+                    <li class="menu-item"><a href="/about">ABOUT</a></li>
+                    <li class="menu-item"><a href="/portfolio">PORTFOLIO</a></li>
+                    <li class="menu-item"><a href="/activity">ACTIVITY</a></li>
+                    <li class="menu-item"><a href="/people">PEOPLE</a></li>
+                    <li class="menu-item"><a href="/apply">APPLY</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- END HEADER -->
+
+<!-- CONTENT -->
+<div id="wrapper">
+    <div id="messenger-wrapper">
+        <div class="plan-wrapper">
+            <div class="plan-text">
+                레알 채팅방
+            </div>
+        </div>
+        <div id="messenger">
+            <div id="log">
+            </div>
+            <form id="broadcast" method="POST" action='#'>
+                <input type="text" autocomplete="off" name="broadcast_data" id="chat_content" placeholder="Message">
+                <input type="submit" id="chat_submit" value="Send">
+            </form>
+        </div>
+
+    </div>
+</div>
+<!-- END CONTENT -->
+
+<!-- FOOTER -->
+<div id="copyright" class="copyright-wrapper">
+    <div class="copyright">
+        <!-- <img src="../static/res/img/logo-normal.png" width="50px" height="50px"/> -->
+        <div class="footer_logo_wrapper">
+            <a href="/"><img src="../static/res/img/logo-normal.png" class="footer_logo"></a>
+        </div>
+        <p id="footer_txt">© 2016 by REAL. All Rights Reserved.</p>
+    </div>
+</div>
+<!-- END FOOTER -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.5/socket.io.min.js"></script>
+<script src="../static/js/real_chat.js" charset="utf-8"></script>
+</body>
+</html>

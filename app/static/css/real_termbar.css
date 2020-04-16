@@ -1,0 +1,46 @@
+/* termbar */
+#termbar ul {
+  margin: 0;
+  padding: 0;
+  list-style:none;
+}
+#termbar ul li {
+  display: inline-block;
+  font-size: 17px;
+  position: relative;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  margin: 0 50px;
+}
+#termbar ul li::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  top: -1em;
+  left: 0.5em;
+  background: #b3e1ee;
+}
+#termbar ul li.active::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  top: -1em;
+  left: 0.5em;
+  background: #00517a;
+}
+/* END termbar */
+
+@media (max-width: 767px) {
+  #termbar ul li {
+    font-size: 15px;
+    margin: 0 30px;
+  }
+  #termbar ul li::before {
+    width: 11px;
+    height: 11px;
+  }
+}
